@@ -11,3 +11,7 @@ Features:
 4-No quality loss during video processing
 5-Customizable frame rates and video output settings
 6-Simple integration into workflows using FFmpeg
+
+Reference:
+https://ffmpeg.org/ffmpeg-filters.html#v360
+

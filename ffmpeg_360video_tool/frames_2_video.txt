@@ -1,0 +1,1 @@
+ffmpeg -r 30 -i frame0%05d.png -vcodec libx264 -crf 16 -pix_fmt yuv420p video.mp4
