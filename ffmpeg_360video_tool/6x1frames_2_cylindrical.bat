@@ -22,7 +22,7 @@ if not exist "%input_folder%frame000001.png" if not exist "%input_folder%frame00
 )
 
 rem Converte i frame cubici in equirttangolari
-ffmpeg -r 30 -i frame0%05d.png -vf "v360=c6x1:cylindrical:h_fov=120:v_fov=45" -c:v libx264 -crf 18 -preset slow -r 30 cylindrical_120h45v.mp4
+ffmpeg -r 30 -i frame0%%05d.png -vf "v360=c6x1:cylindrical:h_fov=120:v_fov=45" -c:v libx264 -crf 18 -preset slow -r 30 cylindrical_120h45v.mp4
 
 echo Conversione completata.
 pause

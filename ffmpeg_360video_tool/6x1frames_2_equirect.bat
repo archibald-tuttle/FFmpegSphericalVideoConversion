@@ -21,7 +21,7 @@ if not exist "%input_folder%frame000001.png" if not exist "%input_folder%frame00
     exit /b
 )
 
-rem Converte i frame cubici in equirttangolari
+rem Converte i frame cubici in equirettangolari
 ffmpeg -r 30 -i frame0%%05d.png -vf "v360=c6x1:equirect" -c:v libx264 -crf 18 -preset slow -r 30 equirectangular.mp4
 
 echo Conversione completata.
