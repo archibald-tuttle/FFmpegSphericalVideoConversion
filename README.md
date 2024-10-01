@@ -16,10 +16,10 @@ Features:
 Reference:
 https://ffmpeg.org/ffmpeg-filters.html#v360
 
-
 Feel free to customize any part of the text further to suit your preferences!
 
 
+NOTES
 Order of faces for the input/output cubemap. 
 Designation of directions:
 ‘r’ right
@@ -31,24 +31,23 @@ Designation of directions:
 Default value is ‘rludfb’
 
 
-EXEMPLE OF USING
+ffmpeg command
 
-If you have a video 
+Convert video format from equirectangular to cubemap 3x2
+-ffmpeg -i equirect.mp4 -vf "v360=equirect:cube3x2" cube3x2.mp4
+
+Convert video format from cubemap6x1 to equirectangular
+-ffmpeg -i cube6x1.mp4 -vf "v360=c6x1:equirect" equirect.mp4
+
+Create video from a sequences of cubamap 6x1 (rludfb) images
+(names: frame000001.png, frame000002.png, frame000003.png, ...)
+-ffmpeg -r 30 -i frame0%05d.png videocube6x1.mp4
+
+Convert sequence of cubemap 6x1 images to equirectangular and create video with custom compression
+ffmpeg -r 30 -i frame0%05d.png -vf "v360=c6x1:equirect" -c:v libx264 -crf 16 -preset slow -r 30 equirectangular.mp4
+
+![sequence-conversion-video](https://github.com/user-attachments/assets/c6ce06a9-968b-4b71-9fc8-c1514961af98)
 
 
-If you have a folder with a sequence of cubemap 6x1 (rludfb) images:
-frame000001.png, frame000002.png, frame000003.png, ...
-
-To convert cubemap video cube 6x1 to equirectangular videos using a default mp4 compression you have two options:
-
-A
-Open cmd.exe, go to the folder containing the frames
--type cd C:\Users\username\images\sequence-001
-and execute this command:
-ffmpeg -i cube6x1.mp4 -vf "v360=c6x1:equirect" equirect.mp4
-(the script is cointained in the repository: cube6x1_2_equirect.txt)
-
-b
-copy this file bat: 6x1_equirect.bat
-in the folder cintaining the sequences and he wil do the same, with less operation! and more, it will describe the compression of video 
-ffmpeg -r 30 -i frame0%05d.png -vcodec libx264 -crf 16 -pix_fmt yuv420p video.mp4
+To convert a sequence of frames and save it to a different panoramic format open and try the files.bat!
+Just copy them in the folder and you can convert also in sigular face of the cube.
