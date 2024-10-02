@@ -39,12 +39,11 @@ Convert video format from equirectangular to cubemap 3x2
 Convert video format from cubemap6x1 to equirectangular
 -ffmpeg -i cube6x1.mp4 -vf "v360=c6x1:equirect" equirect.mp4
 
-Create video from a sequences of cubamap 6x1 (rludfb) images
-(names: frame000001.png, frame000002.png, frame000003.png, ...)
+Create video from a sequences of cubamap 6x1 (rludfb) images (names: frame000001.png, frame000002.png, ... )
 -ffmpeg -r 30 -i frame0%05d.png videocube6x1.mp4
 
 Convert sequence of cubemap 6x1 images to equirectangular and create video with custom compression
-ffmpeg -r 30 -i frame0%05d.png -vf "v360=c6x1:equirect" -c:v libx264 -crf 16 -preset slow -r 30 equirectangular.mp4
+-ffmpeg -r 30 -i frame0%05d.png -vf "v360=c6x1:equirect" -c:v libx264 -crf 16 -preset slow -r 30 equirectangular.mp4
 
 ![sequence-conversion-video](https://github.com/user-attachments/assets/c6ce06a9-968b-4b71-9fc8-c1514961af98)
 
