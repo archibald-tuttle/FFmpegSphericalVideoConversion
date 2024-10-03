@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 rem Imposta la cartella corrente
 set input_folder=%~dp0
-set output_folder=%input_folder%output_videos_faces
+set output_folder=%input_folder%output_videos_cube3x2
 
 rem Crea la cartella di output se non esiste
 if not exist "%output_folder%" mkdir "%output_folder%"
