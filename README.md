@@ -19,9 +19,7 @@ Features:
 Feel free to customize any part of the text further to suit your preferences!
 
 --------------------------------------------------
-Install FFmpeg and ensuring FFmpeg works correctly (OS Windows)
-
-  For the conversion tools to work correctly, FFmpeg must be installed on your system, and the installation path must be included in the Windows environment variables (PATH).
+For the conversion tools to work correctly FFmpeg must be installed on your system, and the installation path must be included in the Windows environment variables (PATH).
 
 A) Install FFmpeg
 
