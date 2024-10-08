@@ -18,30 +18,25 @@ Features:
 Feel free to customize any part of the text further to suit your preferences!
 
 --------------------------------------------------
-Install FFmpeg and ensuring FFmpeg Works Correctly (OS Windows)
+Install FFmpeg and ensuring FFmpeg works correctly (OS Windows)
 
 For the conversion tools to work correctly, FFmpeg must be installed on your system, and the installation path must be included in the Windows environment variables (PATH).
 
-Install FFmpeg
+A) Install FFmpeg
 (1) If FFmpeg is not installed, you can download it from the official site: https://ffmpeg.org/download.html.
 Follow the instructions for your platform (Windows, macOS, Linux) and ensure you install the complete version of FFmpeg.
-
 (2) Download a packages containing binaries [ffmpeg-git-full.7z](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z) from certified developers webpage https://www.gyan.dev/ffmpeg/builds/. 
 Extract and rename the extracted folder as "ffmpeg".
-
 (3) Move the folder it in a proper folder like C:\Program Files\
 
-Add FFmpeg tools to Environment Variables
-
+B)Add FFmpeg tools to Environment Variables
 If you haven’t already, you need to add the FFmpeg path to the system environment variables. 
-
 Here’s how to do this on Windows:
 (3) Locate the directory where you extracted or installed FFmpeg. It should contain ffmpeg.exe, ffprobe.exe anf ffplay.exe.
 (4, 5 , 6) Go to “Control Panel” → “System” → “Advanced System Settings” → “Environment Variables.”
-In the “System variables” section, select “Path” and click “Edit.”
-Add a new entry with the full path to the folder that contains ffmpeg.exe and ffprobe.exe.
+(7, 8) In the “System variables” section, select “Path” and click “Edit.”
+(9, 10) Add a new entry with the full path to the folder that contains ffmpeg.exe, ffprobe.exe and ffplay.exe.
 Click “OK” to close all windows.
-
 
 
 Verify FFmpeg Installation:
@@ -50,12 +45,11 @@ ffmpeg -version
 If installed correctly, you should see the version of ffmpeg. 
 Otherwise, the command won’t be recognized.
 
-
 After confirming that ffmpeg and ffprobe is installed correctly, you are ready to use the tools!
 
-
 --------------------------------------------------
-Reference:
+
+Filter Reference:
 https://ffmpeg.org/ffmpeg-filters.html#v360
 
 The v360 filter accepts the following formats:
