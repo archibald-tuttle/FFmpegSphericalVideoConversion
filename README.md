@@ -21,6 +21,9 @@ Feel free to customize any part of the text further to suit your preferences!
 --------------------------------------------------
 For the conversion tools to work correctly FFmpeg must be installed on your system, and the installation path must be included in the Windows environment variables (PATH).
 
+Here how To install
+https://archibald-tuttle.github.io/index.html
+
 A) Install FFmpeg
 
   (1) If FFmpeg is not installed, you can download it from the official site: https://ffmpeg.org/download.html.
