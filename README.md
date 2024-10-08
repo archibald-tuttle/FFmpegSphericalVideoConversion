@@ -51,7 +51,9 @@ Click “OK” to close all windows.
 
 Verify FFmpeg Installation:
 Open the Command Prompt (CMD) and type:
+
 ffmpeg -version
+
 If installed correctly, you should see the version of ffmpeg. 
 Otherwise, the command won’t be recognized.
 
