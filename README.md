@@ -1,4 +1,5 @@
-# FFmpegSphericalVideoConversion
+# FFmpeg Spherical Video Conversion Tool
+
 Transform video projections such as cubemap, equirectangular, and more.
 
 This repository provides a set of scripts that simplify the process of converting and editing 360° and spherical video formats using FFmpeg. Actually it doesn't cover all the combination. The scripts are open, it will be easy to custumize starting from the examples.
