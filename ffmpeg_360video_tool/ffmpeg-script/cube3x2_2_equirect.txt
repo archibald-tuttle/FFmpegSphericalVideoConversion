@@ -1,1 +1,0 @@
-ffmpeg -i cube3x2.mp4 -vf "v360=c3x2:equirect" equirect.mp4

@@ -1,1 +1,0 @@
-ffmpeg -i cube6x1.mp4 -vf "v360=c6x1:equirect" equirect.mp4

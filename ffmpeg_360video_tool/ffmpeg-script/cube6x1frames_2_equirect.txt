@@ -1,1 +1,0 @@
-ffmpeg -r 30 -i frame0%05d.png -vf "v360=c6x1:equirect" -c:v libx264 -crf 18 -preset slow -r 30 equirectangular.mp4

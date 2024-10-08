@@ -1,1 +1,0 @@
-ffmpeg -r 30 -i frame0%05d.png -vf "v360=equirect:c3x2" -c:v libx264 -crf 18 -preset slow -r 30 cube3x2.mp4

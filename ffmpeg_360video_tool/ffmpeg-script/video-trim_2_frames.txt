@@ -1,1 +1,0 @@
-ffmpeg -ss 00:00:00 -t 00:00:10 -i Video.mp4 -vf fps=10 frame-%05d.png
