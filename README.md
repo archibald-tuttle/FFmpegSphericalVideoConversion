@@ -1,9 +1,11 @@
 # FFmpegSphericalVideoConversion
-Transform video projections such as cubemap, equirectangular, and more
+Transform video projections such as cubemap, equirectangular, and more.
 
-This repository provides a set of scripts that simplify the process of converting and editing 360° and spherical video formats using FFmpeg. Actually it doesn't cover all the combination. The scripts are vary basic, it will be easy to custumize input and output format starting from the examples.
+This repository provides a set of scripts that simplify the process of converting and editing 360° and spherical video formats using FFmpeg. Actually it doesn't cover all the combination. The scripts are open, it will be easy to custumize starting from the examples.
 
-Whether you're working with cubemap formats (e.g., 6x1 or 3x2) or need to convert to equirectangular projections, these tools are designed for easy integration into your workflow. Ideal for anyone working with VR, panoramic, or immersive media.
+Whether you're working with 360 panoramic projection as equirectangular or cubemap, and you need to convert projections, these tools are designed for easy integration into your workflow. 
+
+Ideal for anyone working with VR, Immersive Media, Spherical Photogrammetry.
 
 Features:
 1 - Convert standard panoramic images sequence and video 
@@ -14,6 +16,42 @@ Features:
 6 - Simple integration into workflows using FFmpeg
 
 Feel free to customize any part of the text further to suit your preferences!
+
+--------------------------------------------------
+Install FFmpeg and ensuring FFmpeg Works Correctly (OS Windows)
+
+For the conversion tools to work correctly, FFmpeg must be installed on your system, and the installation path must be included in the Windows environment variables (PATH).
+
+Install FFmpeg
+(1) If FFmpeg is not installed, you can download it from the official site: https://ffmpeg.org/download.html.
+Follow the instructions for your platform (Windows, macOS, Linux) and ensure you install the complete version of FFmpeg.
+
+(2) Download a packages containing binaries [ffmpeg-git-full.7z](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z) from certified developers webpage https://www.gyan.dev/ffmpeg/builds/. 
+Extract and rename the extracted folder as "ffmpeg".
+
+(3) Move the folder it in a proper folder like C:\Program Files\
+
+Add FFmpeg tools to Environment Variables
+
+If you haven’t already, you need to add the FFmpeg path to the system environment variables. 
+
+Here’s how to do this on Windows:
+(3) Locate the directory where you extracted or installed FFmpeg. It should contain ffmpeg.exe, ffprobe.exe anf ffplay.exe.
+(4, 5 , 6) Go to “Control Panel” → “System” → “Advanced System Settings” → “Environment Variables.”
+In the “System variables” section, select “Path” and click “Edit.”
+Add a new entry with the full path to the folder that contains ffmpeg.exe and ffprobe.exe.
+Click “OK” to close all windows.
+
+
+
+Verify FFmpeg Installation:
+Open the Command Prompt (CMD) and type:
+ffmpeg -version
+If installed correctly, you should see the version of ffmpeg. 
+Otherwise, the command won’t be recognized.
+
+
+After confirming that ffmpeg and ffprobe is installed correctly, you are ready to use the tools!
 
 
 --------------------------------------------------
