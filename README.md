@@ -2,7 +2,8 @@
 
 Transform video projections such as cubemap, equirectangular, and more.
 
-This repository provides a set of scripts that simplify the process of converting and editing 360° and spherical video formats using FFmpeg. Actually it doesn't cover all the combination. The scripts are open, it will be easy to custumize starting from the examples.
+This repository provides a set of scripts that simplify the process of converting and editing 360° and spherical video formats using FFmpeg. 
+Actually it doesn't cover all the combination. The scripts are open, it will be easy to custumize starting from the examples.
 
 Whether you're working with 360 panoramic projection as equirectangular or cubemap, and you need to convert projections, these tools are designed for easy integration into your workflow. 
 
@@ -25,8 +26,9 @@ Here a guide to install ffmpeg on windows
 [guide](https://archibald-tuttle.github.io/tutorial/ffmpeg-install.html)
 
 ---------------------------------------------------
-Filter Reference:
-https://ffmpeg.org/ffmpeg-filters.html#v360
+
+360 Video Filter Reference
+[https://ffmpeg.org/ffmpeg-filters.html#v360](https://ffmpeg.org/ffmpeg-filters.html#v360)
 
 The v360 filter accepts the following formats:
 ‘e’
@@ -38,7 +40,6 @@ Equirectangular projection.
 ‘c1x6’
 Cubemap with 3x2/6x1/1x6 layout.
 
-Note
 Order of faces for the input/output cubemap. 
 Designation of directions:
 ‘r’ right
