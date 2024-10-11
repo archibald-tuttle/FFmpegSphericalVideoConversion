@@ -7,8 +7,6 @@ Actually it doesn't cover all the combination, the scripts are open, it will be 
 Ideal for anyone working with VR, Immersive Media, Spherical Photogrammetry.
 Whether you're working with 360 panoramic projection as equirectangular or cubemap, and you need to convert projections, these tools are designed for easy integration into your workflow. 
 
-
-
 Features:
 1 - Convert standard panoramic images sequence and video 
 2 - Batch processing for image sequences
@@ -20,12 +18,21 @@ Features:
 Feel free to customize any part of the text further to suit your preferences!
 
 --------------------------------------------------
-For the conversion tools to work correctly FFmpeg must be installed on your system, and the installation path must be included in the Windows environment variables (PATH).
 
-Here a guide to install ffmpeg on windows
+HOW TO INSTALL
+If you already have FFmpeg installed you are ready to run the tools.
+FFmpeg must be installed on your system, and the installation path must be included in the Windows environment variables (PATH).
+
+Here a guide to install FFmpeg on windows 
 [guide](https://archibald-tuttle.github.io/tutorial/ffmpeg-install.html)
+At the end of the page you have the same instruction without pictures.
 
 ---------------------------------------------------
+
+HOW TO USE
+
+In most cases (suffix_d&d) youjust need to drag and drop fta file on the .bat to execute the conversion.
+
 
 360 Video Filter Reference
 [https://ffmpeg.org/ffmpeg-filters.html#v360](https://ffmpeg.org/ffmpeg-filters.html#v360)
@@ -50,47 +57,52 @@ Designation of directions:
 ‘b’ back
 Default value is ‘rludfb’
 
+
 Cumemap Faces 6x1 Order
+
 | Right | Left | Up | Down | Front | Back |
 
+
 Cumemap Faces 3x2 Order
+
 | Right | Left  | Up   |
 | Down  | Front | Back |
 
 --------------------------------------------------------
+
 TYPE OF CONVERSION ANT TOOL (file.bat)
 
-| Conversion Video <-> Frames         | Images                   | Filemname            | GitHub Link                                |
-|-------------------------------------|--------------------------|----------------------|--------------------------------------------|
-| video to frames                     |                          | video_2_frames       | [Link GitHub](https://github.com/archibald-tuttle/FFmpegSphericalVideoConversion/tree/main/ffmpeg_360video_tool/video_2_video)
-| frames to video                     |                          | frames_2_video       | [Link GitHub](https://github.com/esempio1) |
+| Conversion Video <-> Frames         | Images                   | Filemname                  | GitHub Link                                |
+|-------------------------------------|--------------------------|----------------------------|--------------------------------------------|
+| video to frames                     |                          | video_2_frames             | [Link GitHub](https://github.com/archibald-tuttle/FFmpegSphericalVideoConversion/tree/main/ffmpeg_360video_tool/video_2_video)
+| frames to video                     |                          | frames_2_video             |                                            |
 
 | Conversion - [Video to Video](https://github.com/archibald-tuttle/FFmpegSphericalVideoConversion/tree/main/ffmpeg_360video_tool/frame_2_video)        | Images                   | Filemname            | GitHub Link                                |
-|-------------------------------------|--------------------------|----------------------|--------------------------------------------|
-| equirect to cube 6x1                |                          | equirect_2_cube6x1   | [Link GitHub](https://github.com/esempio1) |
-| equirect to cube 3x2                |                          | equirect_2_cube3x2   | [Link GitHub](https://github.com/esempio2) |
-| equirect to cubemap faces           |                          | equirect_2_cubefaces | [Link GitHub](https://github.com/esempio2) |
-| cubemap 6x1 to equirect             |                          | cube6x1_2_equirect   | [Link GitHub](https://github.com/esempio3) |
-| cubemap 3x2 to equirect             |                          | cube3x2_2_equirect   | [Link GitHub](https://github.com/esempio4) |
-| cubemap 6x1 to cubemap faces        |                          | cube6x1_2_cubefaces  | [Link GitHub](https://github.com/esempio2) |
+|-------------------------------------|--------------------------|----------------------------|--------------------------------------------|
+| equirect to cube 6x1                |                          | equirect_2_cube6x1         |                                            |
+| equirect to cube 3x2                |                          | equirect_2_cube3x2         |                                            |
+| equirect to cubemap faces           |                          | equirect_2_cubefaces       |                                            |
+| cubemap 6x1 to equirect             |                          | cube6x1_2_equirect         |                                            |
+| cubemap 3x2 to equirect             |                          | cube3x2_2_equirect         |                                            |
+| cubemap 6x1 to cubemap faces        |                          | cube6x1_2_cubefaces        |                                            |
 
 | Conversion - [Video to Frames](https://github.com/archibald-tuttle/FFmpegSphericalVideoConversion/tree/main/ffmpeg_360video_tool/video_2_frames)        | Images                   | Filemname                  | GitHub Link                                |
 |-------------------------------------|--------------------------|----------------------------|--------------------------------------------|
-| equirect to cubemap 6x1 frames      |                          | equirect_2_cube6x1frames   | [Link GitHub](https://github.com/esempio1) |
-| equirect to cubemap 3x2 frames      |                          | equirect_2_cube3x2frames   | [Link GitHub](https://github.com/esempio2) |
-| equirect to cubemap faces frames    |                          | equirect_2_cubefacesframes | [Link GitHub](https://github.com/esempio2) |
-| cubemap 6x1 to equirect frames      |                          | cube6x1_2_equirectframes   | [Link GitHub](https://github.com/esempio3) |
-| cubemap 3x2 to equirect frames      |                          | cube3x2_2_equirectframes   | [Link GitHub](https://github.com/esempio4) |
-| cubemap 6x1 to cubemap faces frames |                          | cube6x1_2_cubefacesframes  | [Link GitHub](https://github.com/esempio2) |
+| equirect to cubemap 6x1 frames      |                          | equirect_2_cube6x1frames   ||                                                |
+| equirect to cubemap 3x2 frames      |                          | equirect_2_cube3x2frames   |                                            |
+| equirect to cubemap faces frames    |                          | equirect_2_cubefacesframes |                                            |
+| cubemap 6x1 to equirect frames      |                          | cube6x1_2_equirectframes   |                                            |
+| cubemap 3x2 to equirect frames      |                          | cube3x2_2_equirectframes   |                                            |
+| cubemap 6x1 to cubemap faces frames |                          | cube6x1_2_cubefacesframes  |                                            |
 
 | Conversion - [Frames to Video](https://github.com/archibald-tuttle/FFmpegSphericalVideoConversion/tree/main/ffmpeg_360video_tool/frame_2_video)        | Images                   | Filemname                  | GitHub Link                                |
 |-------------------------------------|--------------------------|----------------------------|--------------------------------------------|
-| equirect frames to cubemap 6x1      |                          | equirectframes_2_cube6x1   | [Link GitHub](https://github.com/esempio1) |
-| equirect frames to cubemap 3x2      |                          | equirectframes_2_cube3x2   | [Link GitHub](https://github.com/esempio2) |
-| equirect frames to cubemap faces    |                          | equirectframes_2_cubefaces | [Link GitHub](https://github.com/esempio2) |
-| cubemap 6x1 frames to equirect      |                          | cube6x1frames_2_equirect   | [Link GitHub](https://github.com/esempio3) |
-| cubemap 3x2 frames to equirect      |                          | cube3x2frames_2_equirect   | [Link GitHub](https://github.com/esempio4) |
-| cubemap 6x1 frames to cubemap faces |                          | cube6x1frames_2_cubefaces  | [Link GitHub](https://github.com/esempio2) |
+| equirect frames to cubemap 6x1      |                          | equirectframes_2_cube6x1   |                                            |
+| equirect frames to cubemap 3x2      |                          | equirectframes_2_cube3x2   |                                            |
+| equirect frames to cubemap faces    |                          | equirectframes_2_cubefaces |                                            |
+| cubemap 6x1 frames to equirect      |                          | cube6x1frames_2_equirect   |                                            |  
+| cubemap 3x2 frames to equirect      |                          | cube3x2frames_2_equirect   |                                            |
+| cubemap 6x1 frames to cubemap faces |                          | cube6x1frames_2_cubefaces  |                                            |
 
 
 NOTE
